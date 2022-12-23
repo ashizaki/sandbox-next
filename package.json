@@ -4,11 +4,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export && next-export-optimize-images",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^1.12.0",
+    "@emotion/css": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.16",
+    "@mui/styles": "^5.10.16",
     "@next/font": "13.1.0",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
@@ -17,5 +24,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "next-export-optimize-images": "^1.9.2",
+    "prettier": "^2.8.1"
+  },
+  "volta": {
+    "node": "16.19.0",
+    "yarn": "1.22.19"
   }
 }
