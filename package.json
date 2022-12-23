@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export && next-export-optimize-images",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "amplify codegen"
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.12.0",
