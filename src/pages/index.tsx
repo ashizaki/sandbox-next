@@ -9,8 +9,13 @@ const Page: NextPage = () => {
       <Stack direction={"column"}>
         <List>
           <Link href={pagesPath.presigned_url_upload.$url()} passHref>
-            <ListItem>
+            <ListItem sx={{ border: "1px solid #ccc" }}>
               <ListItemText primary={"署名付きURLを使ったファイルのアップロード"} />
+            </ListItem>
+          </Link>
+          <Link href={pagesPath.video_player.$url()} passHref>
+            <ListItem sx={{ border: "1px solid #ccc" }}>
+              <ListItemText primary={"動画のストリーミング再生"} />
             </ListItem>
           </Link>
         </List>
