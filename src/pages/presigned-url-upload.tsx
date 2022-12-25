@@ -19,7 +19,7 @@ const Page: NextPage = () => {
     try {
       const ret = (await API.graphql(
         graphqlOperation(createUploadPresignedUrl, {
-          input: file.name,
+          filename: file.name,
         }),
       )) as GraphQLResult<CreateUploadPresignedUrlMutation>
 
